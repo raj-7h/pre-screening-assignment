@@ -1,6 +1,4 @@
 function PhotoCard({ photo, favourites, dispatch }) {
-  console.log("photo id:", photo.id, typeof photo.id);
-
   const isFav = favourites.some((p) => String(p.id) === String(photo.id));
 
   const toggleFavourite = () => {
